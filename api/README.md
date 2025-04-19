@@ -129,13 +129,13 @@ Les contributions sont les bienvenues !
 
 ## Software Development Kit (SDK)
 
-*A venir*
+[filmsdk](https://pypi.org/project/filmsdk/)
 
 ---
 
 ## URL publique (Cloud) de l'API
 
-*A venir*
+[API Movielens sur Render](https://movie-backend-xelv.onrender.com)
 
 ## Auteur
 
