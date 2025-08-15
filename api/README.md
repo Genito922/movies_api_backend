@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# api_movies_backend
+=======
 # MovieLens API
 
 Bienvenue dans l’API **MovieLens** – une API RESTful développée avec **FastAPI** pour explorer la base de données MovieLens. Elle vous permet d'interroger des informations sur les films, les évaluations, les utilisateurs, les tags et les liens vers des bases de données externes (IMDB, TMDB).
@@ -129,20 +132,21 @@ Les contributions sont les bienvenues !
 
 ## Software Development Kit (SDK)
 
-[filmsdk](https://pypi.org/project/filmsdk/)
+[moviessdk](https://pypi.org/project/moviessdk/)
 
 ---
 
 ## URL publique (Cloud) de l'API
 
-[API Movielens sur Render](https://movie-backend-xelv.onrender.com)
+[API Movielens sur Render](à remplir)
 
 ## Auteur
 
-Développé par [Josué AFOUDA](https://www.linkedin.com/in/josu%C3%A9-afouda/) en FastAPI.
+Développé par [Môh-Adjonlin N'DOUBA](https://www.linkedin.com/in/moh-adjonlin-jean-claude-n-douba-7737bb342/) en FastAPI.
 
 ---
 
 ## Licence
 
 Ce projet est sous licence MIT.
+

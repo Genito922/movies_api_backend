@@ -1,5 +1,5 @@
 # Utilise une image légère de Python 3.12 comme base
-FROM python:3.12-slim
+FROM python:3.11-slim
 
 # Définit le répertoire de travail dans le conteneur
 WORKDIR /app
@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY . .
 
 # Lance le serveur Uvicorn pour exécuter l'API FastAPI
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
