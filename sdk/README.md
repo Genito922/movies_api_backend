@@ -1,8 +1,8 @@
-# MovieLens SDK - `filmsdk`
+# MovieLens SDK - `genitosdk`
 
 Un SDK Python simple pour interagir avec l’API REST MovieLens. Il est conçu pour les **Data Analysts** et **Data Scientists**, avec une prise en charge native de **Pydantic**, **dictionnaires** et **DataFrames Pandas**.
 
-[![PyPI version](https://badge.fury.io/py/moviesdk.svg)](https://badge.fury.io/py/moviesdk)
+[![PyPI version](https://badge.fury.io/py/genitosdk.svg)](https://badge.fury.io/py/genitosdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -10,7 +10,7 @@ Un SDK Python simple pour interagir avec l’API REST MovieLens. Il est conçu p
 ## Installation
 
 ```bash
-pip install filmsdk
+pip install genitosdk
 ```
 
 ---
@@ -18,10 +18,10 @@ pip install filmsdk
 ## Configuration
 
 ```python
-from filmsdk import MovieClient, MovieConfig
+from genitosdk import MovieClient, MovieConfig
 
 # Configuration avec l’URL de votre API (Render ou locale)
-config = MovieConfig(movie_base_url="https://movie-backend-xelv.onrender.com")
+config = MovieConfig(movie_base_url="https://movies-api-backend-tcju.onrender.com")
 client = MovieClient(config=config)
 ```
 
@@ -97,5 +97,5 @@ MIT License
 
 ## Liens utiles
 
-- API Render : [https://movie-backend-xelv.onrender.com](https://movie-backend-xelv.onrender.com)
-- PyPI : [https://pypi.org/project/filmsdk](https://pypi.org/project/filmsdk)
+- API Render : [https://movies-api-backend-tcju.onrender.com](https://movies-api-backend-tcju.onrender.com)
+- PyPI : [https://pypi.org/project/genitosdk](https://pypi.org/project/genitosdk)

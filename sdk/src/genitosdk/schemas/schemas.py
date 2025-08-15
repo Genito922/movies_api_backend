@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional, List
-
+""" contient les fichier pydantic, il garantie la cohérence de l'envoie l'api et la recpetion du sdk """
 
 # --- Schémas secondaires ---
 

@@ -1,17 +1,17 @@
 [build-system]
-requires = ["setuptools>=78.1.0"]
+requires = ["setuptools>=80.9.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "filmsdk"
-version = "0.0.2"
+name = "genitosdk"
+version = "0.0.3"
 authors = [
-  { name="[Josh Aremou]" },
+  { name="[Môh-Adjonlin N'douba]" },
 ]
 description = "SDK Python pour accéder à l’API MovieLens (Data Analysts/Data Scientists friendly)"
 readme = "README.md"
 license = { file="LICENSE" }
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
@@ -20,9 +20,10 @@ classifiers = [
 ]
 dependencies = [
        'httpx>=0.28.1',
-       'pydantic>=2.11.3',
+       'pydantic>=2.11.7',
        'backoff>=2.2.1',
        'numpy>=2.2.4',
        'pandas>=2.2.3',
        'python-dotenv',
 ]
+

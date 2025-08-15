@@ -11,7 +11,7 @@ class RatingBase(BaseModel):
     timestamp: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class TagBase(BaseModel):
@@ -21,7 +21,7 @@ class TagBase(BaseModel):
     timestamp: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class LinkBase(BaseModel):
@@ -29,7 +29,7 @@ class LinkBase(BaseModel):
     tmdbId: Optional[int]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 # --- Schéma principal pour Movie ---
@@ -39,7 +39,7 @@ class MovieBase(BaseModel):
     genres: Optional[str] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class MovieDetailed(MovieBase):
@@ -55,7 +55,7 @@ class MovieSimple(BaseModel):
     genres: Optional[str]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 # --- Pour les endpoints de /ratings et /tags si appelés seuls ---
@@ -66,7 +66,7 @@ class RatingSimple(BaseModel):
     timestamp: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class TagSimple(BaseModel):
@@ -76,7 +76,7 @@ class TagSimple(BaseModel):
     timestamp: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class LinkSimple(BaseModel):
@@ -85,7 +85,7 @@ class LinkSimple(BaseModel):
     tmdbId: Optional[int]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class AnalyticsResponse(BaseModel):
     movie_count: int
@@ -94,4 +94,4 @@ class AnalyticsResponse(BaseModel):
     link_count: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True

@@ -5,8 +5,7 @@ from .schemas import MovieSimple, MovieDetailed, RatingSimple, TagSimple, LinkSi
 from .film_config import MovieConfig
 
 import pandas as pd
-
-
+""" fichier coeur exposé à l'utilisateur """
 class MovieClient:
     def __init__(self, config: Optional[MovieConfig] = None):
         self.config = config or MovieConfig()
@@ -18,7 +17,6 @@ class MovieClient:
         elif output_format == "dict":
             return data
         elif output_format == "pandas":
-            import pandas as pd
             return pd.DataFrame(data)
         else:
             raise ValueError("Invalid output_format. Choose from 'pydantic', 'dict', or 'pandas'.")
@@ -42,7 +40,7 @@ class MovieClient:
         title: Optional[str] = None,
         genre: Optional[str] = None,
         output_format: Literal["pydantic", "dict", "pandas"] = "pydantic"
-    ) -> Union[List[MovieSimple], List[dict], "pd.DataFrame"]:
+    ) -> Union[List[MovieSimple], List[dict], pd.DataFrame]:
         url = f"{self.movie_base_url}/movies"
         params = {"skip": skip, "limit": limit}
         if title:
@@ -58,6 +56,8 @@ class MovieClient:
         response = httpx.get(url)
         response.raise_for_status()
         return RatingSimple(**response.json())
+
+
 
     def list_ratings(
         self,
